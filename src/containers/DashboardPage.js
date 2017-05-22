@@ -39,15 +39,7 @@ dialogueOpen(){
 
   render() {
     console.log(this.props.user.id)
-    if(!this.props.user.id){
-      console.log("in")
-      return (
-        <div>
-            <h1>INVALID CREDENTIALS</h1>
-          </div>
-      )
-    }
-
+    
     return (
       <div>
 
@@ -58,7 +50,7 @@ dialogueOpen(){
           <Link to={`/listings/plants`}>
             <InfoBox Icon={NoteAdd}
               color={pink600}
-              title="Create Trades"
+              title="Plants"
             />
             </Link>
           </div>
@@ -68,7 +60,7 @@ dialogueOpen(){
             <Link to={`/listings/pots`}>
             <InfoBox Icon={Delete} {...this.props}
               color={cyan600}
-              title="Delete"
+              title="Pots"
             />
             </Link>
             
@@ -79,7 +71,7 @@ dialogueOpen(){
 
             <InfoBox Icon={Refresh}
               color={purple600}
-              title="Refresh"
+              title="Air Purifiers"
             />
             </Link>
             
@@ -88,7 +80,7 @@ dialogueOpen(){
             <Link to={`/listings/`}>
             <InfoBox Icon={Statastics}
               color={orange600}
-              title="Stats"
+              title="About Us"
 
             />
             </Link>            
